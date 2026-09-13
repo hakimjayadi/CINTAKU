@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Sebuah surat cinta kecil, dibuat khusus untukmu.">
+  <meta name="theme-color" content="#f4c7d0">
+  <title>Untuk kamu | Sebuah surat cinta</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="scrapbook.css">
+  <link rel="stylesheet" href="album.css">
+</head>
+<body>
+  <main class="experience" id="experience">
+    <div class="atmosphere" aria-hidden="true">
+      <span class="bokeh bokeh--one"></span><span class="bokeh bokeh--two"></span><span class="bokeh bokeh--three"></span>
+      <span class="sparkle sparkle--one"></span><span class="sparkle sparkle--two"></span><span class="sparkle sparkle--three"></span>
+    </div>
+    <header class="topbar">
+      <p class="brand-mark">sebuah surat kecil</p>
+      <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false"><span class="music-note" aria-hidden="true">♪</span><span id="music-label">Music</span></button>
+    </header>
+    <section class="opening-scene" id="opening-scene" aria-label="Amplop cinta tertutup">
+      <div class="intro-copy"><p class="eyebrow">dibuka perlahan</p><h1>Untuk kamu.</h1><p>ada sesuatu yang ingin aku sampaikan...</p></div>
+      <div class="envelope-wrap" id="envelope-wrap">
+        <div class="envelope-shadow" aria-hidden="true"></div>
+        <div class="envelope" id="envelope">
+          <div class="envelope-paper envelope-paper--back"></div><div class="envelope-letter-peek" aria-hidden="true"><span>untuk kamu</span></div><div class="envelope-pocket"></div><div class="envelope-flap"></div>
+          <button class="wax-seal" id="wax-seal" type="button" aria-label="Buka surat cinta"><span class="seal-heart" aria-hidden="true"></span></button>
+          <div class="heart-burst" id="heart-burst" aria-hidden="true"></div>
+        </div>
+      </div>
+      <p class="seal-hint" id="seal-hint"><span class="hint-line"></span> sentuh hati untuk membuka</p>
+    </section>
+    <section class="letter-stage" id="letter-stage" aria-live="polite" hidden>
+      <div class="floating-hearts" id="floating-hearts" aria-hidden="true"></div>
+      <article class="love-letter" id="love-letter">
+        <p class="letter-date">13 September 2026</p><p class="letter-greeting" id="letter-greeting"></p><div class="letter-body" id="letter-body"></div><div class="letter-signature" id="letter-signature"></div>
+      </article>
+      <section class="scrapbook" id="scrapbook" aria-label="Potongan kenangan kecil">
+        <p class="scrapbook-label">beberapa hal yang ingin kusimpan</p>
+        <article class="memory-sheet memory-sheet--rose reveal-on-scroll">
+          <span class="washi-tape washi-tape--left" aria-hidden="true"></span><span class="hand-note hand-note--top">jangan senyum dulu</span>
+          <div class="memory-character memory-character--cat" aria-hidden="true"><span class="ear ear--left"></span><span class="ear ear--right"></span><span class="cat-eye cat-eye--left"></span><span class="cat-eye cat-eye--right"></span><span class="cat-mouth"></span><span class="cat-heart">♥</span></div>
+          <div class="memory-copy"><span class="memory-number">01 / little beginning</span><h2>Masih ingat waktu<br>kita pertama ketemu?</h2><p>Entah kenapa sejak saat itu, kamu pelan-pelan selalu ada di pikiranku.</p><span class="doodle-heart">♡</span></div>
+        </article>
+        <article class="memory-sheet memory-sheet--lavender reveal-on-scroll">
+          <span class="washi-tape washi-tape--right" aria-hidden="true"></span><span class="hand-note hand-note--side">ingat ini ya</span>
+          <div class="memory-character memory-character--bear" aria-hidden="true"><span class="bear-ear bear-ear--left"></span><span class="bear-ear bear-ear--right"></span><span class="bear-eye bear-eye--left"></span><span class="bear-eye bear-eye--right"></span><span class="bear-blush bear-blush--left"></span><span class="bear-blush bear-blush--right"></span><span class="bear-heart">♥</span></div>
+          <div class="memory-copy"><span class="memory-number">02 / on ordinary days</span><h2>Hari-hari biasa<br>jadi terasa berbeda.</h2><p>Karena ada kamu di dalamnya. Bahkan pesan singkatmu bisa membuat hari yang panjang terasa lebih ringan.</p><span class="doodle-sparkle">˚₊‧</span></div>
+        </article>
+        <article class="memory-sheet memory-sheet--cream reveal-on-scroll">
+          <span class="washi-tape washi-tape--center" aria-hidden="true"></span><span class="hand-note hand-note--bottom">aku serius loh</span>
+          <div class="memory-character memory-character--flower" aria-hidden="true"><span class="flower-head"><i></i><i></i><i></i><i></i><b></b></span><span class="flower-stem"></span><span class="flower-leaf"></span></div>
+          <div class="memory-copy"><span class="memory-number">03 / one question</span><h2>Dan sekarang...<br>aku punya satu pertanyaan.</h2><p>Ambil waktumu. Aku akan tetap di sini, dengan perasaan yang sama.</p></div>
+        </article>
+        <div class="question" id="question" hidden><p class="question-lead">Jadi...</p><h2>Maukah kamu menjadi<br>perempuan kesayanganku?</h2><div class="question-actions"><button class="choice choice--yes" id="choice-yes" type="button">Iya <span aria-hidden="true">♥</span></button><button class="choice choice--later" id="choice-later" type="button">Pikir dulu</button></div><div class="answer" id="answer" hidden><p>Kalau begitu...</p><strong>mulai hari ini,<br>boleh aku simpan senyum kamu<br>sebagai salah satu hal favoritku?</strong></div></div>
+      </section>
+    </section>
+    <section class="memory-page" id="memory-page" hidden aria-label="Album kenangan">
+      <div class="album-atmosphere" aria-hidden="true"><span class="album-sparkle album-sparkle--one">✦</span><span class="album-sparkle album-sparkle--two">✧</span><span class="album-doodle-heart">♡</span></div>
+      <div class="album-intro"><p class="album-kicker">for the girl who means a lot to me</p><h2>Perempuan<br><em>Kesayanganku</em></h2><p class="album-subtitle">beberapa momen yang ingin selalu aku ingat ♡</p></div>
+      <div class="photo-album" id="photo-album">
+        <figure class="photo-memory photo-memory--hero reveal-photo"><span class="photo-tape"></span><img src="poto/WhatsApp Image 2026-09-13 at 19.44.24.jpeg" alt="Salah satu momen yang ingin selalu aku ingat" loading="eager"><figcaption>kalau suatu hari nanti kita melihat kembali halaman ini,<br>semoga kita masih tersenyum.</figcaption><span class="photo-sticker">♥</span></figure>
+        <figure class="photo-memory photo-memory--cream reveal-photo"><span class="photo-tape"></span><img src="poto/WhatsApp Image 2026-09-13 at 19.44.24 (1).jpeg" alt="Momen manis yang ingin kusimpan" loading="lazy"><figcaption>favorite moment ♡</figcaption><span class="photo-note">my favorite person</span></figure>
+        <figure class="photo-memory photo-memory--white reveal-photo"><img src="poto/WhatsApp Image 2026-09-13 at 19.44.24 (2).jpeg" alt="Kenangan kecil kita" loading="lazy"><figcaption>you make ordinary days special</figcaption></figure>
+        <figure class="photo-memory photo-memory--rose reveal-photo"><span class="flower-sticker" aria-hidden="true">✿</span><img src="poto/WhatsApp Image 2026-09-13 at 19.44.25.jpeg" alt="Hari yang ingin aku kenang bersamamu" loading="lazy"><figcaption>one of my favorite days</figcaption></figure>
+        <figure class="photo-memory photo-memory--diary reveal-photo"><img src="poto/WhatsApp Image 2026-09-13 at 19.44.25 (1).jpeg" alt="Satu halaman kenangan untukmu" loading="lazy"><figcaption>don't forget this ♡</figcaption><span class="photo-note photo-note--right">hehe...</span></figure>
+      </div>
+      <div class="album-ending"><span class="ending-heart">♥</span><p>Terima kasih<br>sudah menjadi bagian<br>dari cerita ini.</p><p>Dan kalau boleh...</p><strong>aku ingin membuat<br>lebih banyak kenangan<br>bersamamu.</strong><span class="ending-signature">♡<br>— dari seseorang yang memilihmu</span></div>
+    </section>
+    <div class="photo-lightbox" id="photo-lightbox" hidden role="dialog" aria-modal="true" aria-label="Foto kenangan"><button class="lightbox-close" id="lightbox-close" type="button" aria-label="Tutup foto">×</button><img id="lightbox-image" src="" alt=""><p id="lightbox-caption">♡</p></div>
+    <aside class="sticker" id="sticker" aria-label="Pesan kecil"><span class="sticker-face" aria-hidden="true"><i></i><i></i><b></b></span><span id="sticker-text">waiting...</span></aside>
+    <audio id="bgm" loop preload="none" aria-label="Musik latar"><source src="bgm.mp3" type="audio/mpeg"></audio>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
